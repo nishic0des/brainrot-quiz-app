@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       answer: "A tamarind",
     },
     {
-      question: "What is category wihtout example?",
+      question: "What is category without example?",
       choices: ["Sure", "Maybe", "Absolutely not", "A bowl"],
       answer: "A bowl",
     },
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
         li.textContent = choice;
         li.addEventListener("click", () => {
           const choices = choicesList.querySelectorAll("li");
-          choices.forEach((c) => c.classList.remove("selected, button:hover"));
+          choices.forEach((c) => c.classList.remove("selected"));
 
           li.classList.add("selected");
           selectAns(choice);
